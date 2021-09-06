@@ -10,7 +10,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -132,11 +132,11 @@ header .wrapper {
   display: none;
   z-index: 99;
 }
-.menu-bar span{
+.menu-bar span {
   color: #fff;
   font-size: 36px;
 }
-.mobile-menu{
+.mobile-menu {
   list-style: none;
   text-align: left;
   width: 50%;
@@ -145,25 +145,20 @@ header .wrapper {
   height: 100vh;
   top: 0;
   z-index: 44;
-  background: linear-gradient(
-    95.62deg,
-    rgb(0, 19, 68),
-    rgba(52, 83, 170, 1)
-  );
+  background: linear-gradient(95.62deg, rgb(0, 19, 68), rgba(52, 83, 170, 1));
   padding: 25% 10% 10% 10%;
-  transition: .6s ease-in;
-
+  transition: 0.6s ease-in;
 }
 
 .mobile-menu li {
   margin-bottom: 50px;
 }
-.mobile-menu li a{
+.mobile-menu li a {
   font-size: 20px;
   color: #ffff;
   font-weight: 600;
 }
-.mobile-menu .social{
+.mobile-menu .social {
   margin-top: 100px;
   border-bottom: 1px solid #fff;
 }
@@ -405,7 +400,7 @@ main .image-container img {
   margin-right: 30px;
 }
 
-#download-container .button li:last-child{
+#download-container .button li:last-child {
   margin-right: 0;
 }
 
@@ -513,6 +508,8 @@ footer {
 .copy p {
   color: #5e5e5e;
   font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.7em;
 }
 
 .copy span a {
@@ -609,29 +606,29 @@ footer {
   #about-us {
     padding: 20% 3% 12% 3%;
   }
-  #about-us .image-container{
+  #about-us .image-container {
     width: 45%;
   }
-  #about-us .text-container{
+  #about-us .text-container {
     width: 43%;
   }
   .services .item {
     width: 28%;
   }
-  #download-container .text-container{
+  #download-container .text-container {
     width: 55%;
   }
-  #download-container .text-container h1{
+  #download-container .text-container h1 {
     font-size: 45px;
     width: 100%;
     margin-bottom: 25px;
   }
-  #download-container .text-container p{
+  #download-container .text-container p {
     font-size: 18px;
     width: 90%;
     margin-bottom: 26px;
   }
-  #download-container .button li{
+  #download-container .button li {
     width: 100%;
   }
   #download-container .button li img {
@@ -644,14 +641,14 @@ footer {
   }
 }
 @media all and (max-width: 768px) {
-  main{
+  main {
     height: calc(100vh - 150px);
   }
-  main .content h1{
+  main .content h1 {
     font-size: 38px;
     width: 100%;
   }
-  main .content p{
+  main .content p {
     width: 100%;
     font-size: 18px;
     margin-bottom: 40px;
@@ -667,7 +664,7 @@ footer {
     width: 60%;
     text-align: center;
   }
-  #about-us .text-container p{
+  #about-us .text-container p {
     font-size: 18px;
   }
   #about-us .image-container img {
@@ -679,16 +676,16 @@ footer {
   .services .item {
     width: 38%;
   }
-  .services .item:nth-child(2n){
+  .services .item:nth-child(2n) {
     margin-right: 0;
   }
-  #download-container{
+  #download-container {
     padding: 4% 6% 17% 6%;
   }
   #download-container .image-box {
     height: 330px;
   }
-  #download-container .text-container{
+  #download-container .text-container {
     width: 50%;
   }
   #download-container .text-container h1 {
@@ -709,17 +706,27 @@ footer {
   }
 }
 @media all and (max-width: 640px) {
-  .menu-bar{
+  .menu-bar {
     display: block;
   }
-  .nav-menu{
+  .nav-menu {
     display: none;
   }
   .active .mobile-menu {
     right: 0;
   }
-  #download-container .text-container h1{
-    font-size: 28px;
+  .logo img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #about-us .image-container {
+    width: 50%;
+  }
+  #about-us .text-container h1 {
+    margin: 20px  auto;
+  }
+  #download-container .text-container h1 {
+    font-size: 26px;
     margin-bottom: 15px;
   }
   #download-container .text-container p {
@@ -729,10 +736,10 @@ footer {
   #download-container .button li {
     margin-right: 14px;
   }
-  #download-container .button li img{
+  #download-container .button li img {
     width: 100%;
   }
-  #download-container .image-box{
+  #download-container .image-box {
     height: 260px;
   }
   footer {
@@ -755,11 +762,12 @@ footer {
   .mobile-menu {
     width: 56%;
   }
-  .mobile-menu .social li img{
+  .mobile-menu .social li img {
     width: 20px;
   }
   .logo img {
-    width: 80%;
+    width: 70%;
+    margin: 0 auto;
   }
   .menu-bar span {
     font-size: 30px;
@@ -775,7 +783,7 @@ footer {
   main .content p {
     font-size: 16px;
   }
-  main .button  {
+  main .button {
     padding: 10px 26px;
     font-size: 16px;
   }
@@ -800,7 +808,7 @@ footer {
     padding-top: 5%;
     width: 90%;
   }
-  #about-us .text-container h4{
+  #about-us .text-container h4 {
     font-size: 16px;
   }
   #about-us .text-container h1 {
@@ -808,7 +816,7 @@ footer {
     margin-top: 16px;
     font-size: 26px;
   }
-  #about-us .text-container p{
+  #about-us .text-container p {
     font-size: 16px;
   }
   #service-section h4 {
@@ -822,10 +830,10 @@ footer {
   .services .item {
     width: 55%;
   }
-  .services .item:nth-child(1n){
+  .services .item:nth-child(1n) {
     margin-right: 0;
   }
-  #download-container{
+  #download-container {
     padding: 30% 6%;
   }
   #download-container .image-box {
@@ -847,8 +855,8 @@ footer {
     width: 80%;
   }
   #download-container .button li {
-    width: 35%;
-    margin-right: 20px; 
+    width: 40%;
+    margin-right: 20px;
   }
   #download-container .button li img {
     width: 110%;
@@ -861,16 +869,15 @@ footer {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .address a{
+  .address a {
     font-size: 12px;
   }
   .contact {
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 30px;
-
   }
-  .contact span{
+  .contact span {
     display: none;
   }
   .contact li {
@@ -883,7 +890,7 @@ footer {
     font-size: 12px;
   }
 }
-@media all and (max-width: 360px){
+@media all and (max-width: 360px) {
   .mobile-menu {
     width: 65%;
     padding-top: 45%;
@@ -891,10 +898,10 @@ footer {
   .mobile-menu li a {
     font-size: 18px;
   }
-  .mobile-menu .social li img{
+  .mobile-menu .social li img {
     width: 20px;
   }
-  main .content h1{
+  main .content h1 {
     font-size: 26px;
     margin-bottom: 16px;
   }
@@ -925,19 +932,19 @@ footer {
   #about-us .text-container h1 {
     font-size: 24px;
   }
-  #about-us .text-container h4{
+  #about-us .text-container h4 {
     font-size: 14px;
   }
   #service-section h1 {
     font-size: 24px;
   }
   #service-section h4 {
-    font-size:  14px;
+    font-size: 14px;
   }
-  .services .item h6{
+  .services .item h6 {
     font-size: 18px;
   }
-  .services .item p{
+  .services .item p {
     font-size: 12px;
   }
   .services .item {
@@ -951,22 +958,22 @@ footer {
     width: 100%;
     font-size: 14px;
   }
-  #download-container .image-container{
+  #download-container .image-container {
     width: 55%;
   }
-  #download-container{
+  #download-container {
     padding-top: 20%;
   }
-  #download-container .image-container img{
+  #download-container .image-container img {
     width: 105%;
   }
-  #download-container .image-container{
+  #download-container .image-container {
     width: 60%;
   }
-  .address a{
+  .address a {
     font-size: 10px;
   }
-  .contact li a{
+  .contact li a {
     font-size: 10px;
   }
   .social img {
@@ -976,7 +983,7 @@ footer {
     font-size: 10px;
   }
 }
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
   .mobile-menu {
     width: 80%;
     padding-top: 45%;
@@ -990,13 +997,13 @@ footer {
   .menu-bar span {
     font-size: 26px;
   }
-  main .content h1{
+  main .content h1 {
     font-size: 22px;
   }
   main .button {
     font-size: 12px;
   }
-  main .text-container{
+  main .text-container {
     padding-bottom: 50%;
   }
   #about-us {
@@ -1012,13 +1019,13 @@ footer {
   #service-section h1 {
     font-size: 22px;
   }
-  .services .item{
+  .services .item {
     width: 80%;
   }
-  #download-container .image-box{
+  #download-container .image-box {
     padding-bottom: 10%;
   }
-  .address a{
+  .address a {
     font-size: 8px;
   }
 }
