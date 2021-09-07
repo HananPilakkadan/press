@@ -828,7 +828,7 @@ footer {
     margin: 0 auto;
   }
   .services .item {
-    width: 70%;
+    width: 75%;
   }
   .services .item:nth-child(1n) {
     margin-right: 0;
