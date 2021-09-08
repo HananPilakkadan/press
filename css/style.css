@@ -823,7 +823,7 @@ footer {
   }
   main .text-container {
     width: 100%;
-    padding: 20% 0 20% 0;
+    padding: 20% 0 25% 0;
   }
   main .content h1 {
     font-size: 32px;
@@ -1045,7 +1045,7 @@ footer {
     padding: 24% 2% 5% 2%;
 }
   .address a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .contact {
     margin: 25px 0;
@@ -1054,7 +1054,7 @@ footer {
     margin-bottom: 8px;
   }
   .contact li a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .social {
     margin-bottom: 25px;
@@ -1063,12 +1063,11 @@ footer {
     width: 20px;
   }
   .copy p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media all and (max-width: 320px) {
   .mobile-menu {
-    width: 80%;
     padding-top: 45%;
   }
   .mobile-menu li a {
@@ -1087,7 +1086,7 @@ footer {
     font-size: 12px;
   }
   main .text-container {
-    padding-bottom: 50%;
+    padding: 50% 0 45% 0;
   }
   #about-us {
     padding-bottom: 24%;
@@ -1102,13 +1101,10 @@ footer {
   #service-section h1 {
     font-size: 22px;
   }
-  .services .item {
-    width: 80%;
-  }
   #download-container .image-box {
     padding-bottom: 10%;
   }
   .address a {
-    font-size: 8px;
+    font-size: 14px;
   }
 }
