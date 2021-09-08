@@ -139,8 +139,8 @@ header .wrapper {
 }
 .menu-bar span {
   display: block;
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   border-radius: 9px;
   margin: 5px auto;
   background-color: #fff;
@@ -150,10 +150,10 @@ header .wrapper {
   transition: .25s ease-in-out;
 }
 .active .menu-bar span:nth-child(1){
-  -webkit-transform:translateY(15px) rotate(45deg);
-  -moz-transform:translateY(15px) rotate(45deg);
-  -o-transform:translateY(15px) rotate(45deg);
-  transform:translateY(15px) rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform:translateY(8px) rotate(45deg);
 }
 .active .menu-bar span:nth-child(2){
   width: 0;
@@ -161,10 +161,10 @@ header .wrapper {
 
 }
 .active .menu-bar span:nth-child(3){
-  -webkit-transform:translateY(-15px) rotate(-45deg);
-  -moz-transform:translateY(-15px) rotate(-45deg);
-  -o-transform:translateY(-15px) rotate(-45deg);
-  transform:translateY(-15px) rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:translateY(-8px) rotate(-45deg);
 }
 .mobile-menu {
   list-style: none;
@@ -823,7 +823,7 @@ footer {
   }
   main .text-container {
     width: 100%;
-    padding: 20% 0 20% 0;
+    padding: 20% 0 14% 0;
   }
   main .content h1 {
     font-size: 32px;
@@ -837,7 +837,8 @@ footer {
     font-size: 16px;
   }
   main .image-container {
-    width: 80%;
+    width: 82%;
+    right: 5%;
   }
   main .image-container img {
     width: 115%;
@@ -883,7 +884,7 @@ footer {
     margin-right: 0;
   } */
   #download-container {
-    padding: 30% 6%;
+    padding: 30% 6% 24% 6%;
   }
   #download-container .image-box {
     height: 350px;
@@ -921,7 +922,7 @@ footer {
     display: block;
   }
   footer {
-    padding: 20% 2% 5% 2%;
+    padding: 22% 2% 5% 2%;
   }
   .top-container {
     width: 22%;
@@ -961,6 +962,11 @@ footer {
   .mobile-menu li a {
     font-size: 18px;
   }
+  .menu-bar span {
+    width: 30px;
+    height: 3px;
+    margin-bottom:2px;
+  }
   .mobile-menu .social li img {
     width: 20px;
   }
@@ -973,15 +979,15 @@ footer {
     margin-bottom: 35px;
   }
   main .text-container {
-    padding-top: 30%;
+    padding-top: 12%;
     padding-bottom: 50px;
   }
   main .image-container {
-    width: 90%;
+    width: 100%;
   }
   main .image-container img {
-    width: 90%;
-    right: -4%;
+    width: 95%;
+    right: -6%;
   }
   #about-us .image-container {
     width: 70%;
@@ -1011,12 +1017,13 @@ footer {
   .services .item p {
     font-size: 14px;
   }
-  .services .item {
-    width: 70%;
+  #download-container .image-box {
+    padding-bottom: 10%;
   }
   #download-container .text-container h1 {
     font-size: 18px;
-    width: 60%;
+    width: 90%;
+    margin: 0 auto;
   }
   #download-container .text-container p {
     width: 100%;
@@ -1034,17 +1041,29 @@ footer {
   #download-container .image-container {
     width: 60%;
   }
+  footer {
+    padding: 24% 2% 5% 2%;
+}
   .address a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .contact {
+    margin: 25px 0;
+  }
+  .contact li {
+    margin-bottom: 8px;
   }
   .contact li a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .social {
+    margin-bottom: 25px;
   }
   .social img {
     width: 20px;
   }
   .copy p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media all and (max-width: 320px) {
