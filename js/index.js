@@ -23,6 +23,21 @@ $(document).ready(function(){
         mouseDrag:false,
     });
     // image-slider-inited
+    window.onscroll = function () {
+        headerFunction();
+      };
+
+      // var header = document.getElementById("header");
+      var body = document.body;
+      var sticky = body.offsetTop;
+
+      function headerFunction() {
+        if (window.pageYOffset > 150) {
+          body.classList.add("sticky");
+        } else {
+          body.classList.remove("sticky");
+        }
+      }
 })
 
 // hamburger-menu
