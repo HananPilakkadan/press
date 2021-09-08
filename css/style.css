@@ -195,6 +195,9 @@ body.sticky {
 .sticky .menu-bar span {
   background-color: #000;
 }
+.sticky.active .menu-bar span{
+  background-color: #fff;
+}
 .active .menu-bar span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
