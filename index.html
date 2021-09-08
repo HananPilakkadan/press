@@ -31,57 +31,57 @@
     <link rel="icon" href="images/uk final tag 2.png" />
   </head>
   <body>
-    <section id="top-container">
-      <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="./images/Group 316.png" alt="Logo"
-            /></a>
-          </div>
-          <div class="menu-bar" onclick="showMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="mobile-menu">
-            <li><a href="#main" onclick="hideMenu()">Home</a></li>
-            <li><a href="#about-us" onclick="hideMenu()">About Us</a></li>
-            <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
-            <div class="social">
-              <li>
-                <a
-                  href="https://www.facebook.com/ukxpress.co.uk/"
-                  target="_blank"
-                  ><img src="./images/Vector (2).png" alt="facebook"
-                /></a>
-              </li>
-              <li>
-                <a href="" target="_blank"
-                  ><img src="./images/Vector (3).png" alt="twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/ukxpress.co.uk/?utm_medium=copy_link"
-                  target="_blank"
-                  ><img src="./images/Vector (1).png" alt="instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="" target="_blank"
-                  ><img src="./images/Vector.png" alt="linkedin"
-                /></a>
-              </li>
-            </div>
-          </ul>
-          <ul class="nav-menu">
-            <li><a href="#main">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./images/Group 316.png" alt="Logo"
+          /></a>
         </div>
-      </header>
+        <div class="menu-bar" onclick="showMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="mobile-menu">
+          <li><a href="#main" onclick="hideMenu()">Home</a></li>
+          <li><a href="#about-us" onclick="hideMenu()">About Us</a></li>
+          <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+          <div class="social">
+            <li>
+              <a
+                href="https://www.facebook.com/ukxpress.co.uk/"
+                target="_blank"
+                ><img src="./images/Vector (2).png" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img src="./images/Vector (3).png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ukxpress.co.uk/?utm_medium=copy_link"
+                target="_blank"
+                ><img src="./images/Vector (1).png" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img src="./images/Vector.png" alt="linkedin"
+              /></a>
+            </li>
+          </div>
+        </ul>
+        <ul class="nav-menu">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="top-container">
       <!-- header-end -->
 
       <!-- #main-section-start -->
@@ -295,7 +295,7 @@
           /></a>
         </li>
         <li>
-          <a href="" target="_blank"
+          <a href="javascript:void(0)" target="_blank"
             ><img src="./images/Vector (3).png" alt="twitter"
           /></a>
         </li>
@@ -307,7 +307,7 @@
           /></a>
         </li>
         <li>
-          <a href="" target="_blank"
+          <a href="javascript:void(0)" target="_blank"
             ><img src="./images/Vector.png" alt="linkedin"
           /></a>
         </li>
@@ -322,5 +322,22 @@
       </div>
     </footer>
     <!-- #footer-section-end -->
+    <script>
+      window.onscroll = function () {
+        headerFunction();
+      };
+
+      // var header = document.getElementById("header");
+      var body = document.body;
+      var sticky = body.offsetTop;
+
+      function headerFunction() {
+        if (window.pageYOffset > 150) {
+          body.classList.add("sticky");
+        } else {
+          body.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
