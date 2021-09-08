@@ -67,7 +67,8 @@ h1 {
   font-family: "open_sansextrabold";
   font-weight: 600;
 }
-h4,h6 {
+h4,
+h6 {
   font-family: "open_sansbold";
 }
 
@@ -85,20 +86,62 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 150px;
+  margin-top: -150px;
 }
 
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+header {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.4s ease;
+}
 header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 150px;
 }
-
+body.sticky {
+  padding-top: 150px;
+}
+.sticky header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9999;
+  animation: smoothScroll 0.6s forwards;
+  box-shadow: 0 -10px 14px 10px rgb(0 0 0 / 20%)
+}
+.sticky header .wrapper {
+  height: 90px;
+}
+.sticky .nav-menu li a {
+  color: #333;
+}
+.sticky .nav-menu {
+  padding: 0;
+}
 .logo img {
   display: block;
   max-width: 100%;
 }
-.active .logo img{
+.sticky .logo img {
+  width: 60%;
+}
+.active .logo img {
   display: none;
 }
 .nav-menu {
@@ -144,27 +187,29 @@ header .wrapper {
   border-radius: 9px;
   margin: 5px auto;
   background-color: #fff;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-.active .menu-bar span:nth-child(1){
+.sticky .menu-bar span {
+  background-color: #000;
+}
+.active .menu-bar span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform:translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
-.active .menu-bar span:nth-child(2){
+.active .menu-bar span:nth-child(2) {
   width: 0;
   opacity: 0;
-
 }
-.active .menu-bar span:nth-child(3){
-  -webkit-transform:rotate(-45deg);
-  -moz-transform:rotate(-45deg);
-  -o-transform:rotate(-45deg);
-  transform:translateY(-8px) rotate(-45deg);
+.active .menu-bar span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 .mobile-menu {
   list-style: none;
@@ -177,10 +222,10 @@ header .wrapper {
   z-index: 44;
   background: linear-gradient(95.62deg, rgb(0, 19, 68), rgba(52, 83, 170, 1));
   padding: 25% 10% 10% 10%;
-  -webkit-transition:0.6s ease-in;
+  -webkit-transition: 0.6s ease-in;
   transition: 0.6s ease-in;
-  -moz-transition-webkit-transition:0.6s ease-in;
-  -o-transition-webkit-transition:0.6s ease-in;
+  -moz-transition-webkit-transition: 0.6s ease-in;
+  -o-transition-webkit-transition: 0.6s ease-in;
 }
 
 .mobile-menu li {
@@ -762,7 +807,7 @@ footer {
     width: 115%;
   }
   #about-us .text-container h1 {
-    margin: 20px  auto;
+    margin: 20px auto;
   }
   .services .item {
     width: 60%;
@@ -818,7 +863,7 @@ footer {
   .menu-bar span {
     width: 35px;
   }
-  .menu-bar span:nth-child(2){
+  .menu-bar span:nth-child(2) {
     margin: 5px 0;
   }
   main .text-container {
@@ -965,7 +1010,7 @@ footer {
   .menu-bar span {
     width: 30px;
     height: 3px;
-    margin-bottom:2px;
+    margin-bottom: 2px;
   }
   .mobile-menu .social li img {
     width: 20px;
@@ -979,15 +1024,15 @@ footer {
     margin-bottom: 35px;
   }
   main .text-container {
-    padding-top: 12%;
-    padding-bottom: 50px;
+    padding-top: 30%;
+    padding-bottom: 100px;
   }
   main .image-container {
     width: 100%;
   }
   main .image-container img {
-    width: 95%;
-    right: -6%;
+    width: 106%;
+    right: -12%;
   }
   #about-us .image-container {
     width: 70%;
@@ -1043,7 +1088,7 @@ footer {
   }
   footer {
     padding: 24% 2% 5% 2%;
-}
+  }
   .address a {
     font-size: 14px;
   }
