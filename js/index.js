@@ -11,18 +11,22 @@ $(document).ready(function(){
       });
       wow.init();
 
-
+      // 
     $('.owl-carousel').owlCarousel({
         items:1,
         loop:true,
         autoplay:true,
         autoplaySpeed:1000,
-        autoplayTimeout:3000,
+        autoplayTimeout:4000,
         dots:false,
         touchDrag:false,
         mouseDrag:false,
+        smartSpeed: 500,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
     });
-    // image-slider-inited
+
+
     window.onscroll = function () {
         headerFunction();
       };
@@ -48,3 +52,4 @@ function showMenu() {
 function hideMenu() {
     $("body").removeClass("active");
 }
+

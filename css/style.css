@@ -247,6 +247,9 @@ body.sticky {
   margin-bottom: 20px;
   opacity: 1;
 }
+.mobile-menu .social li img {
+  filter: invert(1);
+}
 
 /* header-end */
 
@@ -289,6 +292,7 @@ main .button {
   color: #fff;
   font-size: 20px;
   font-weight: 900;
+  transition: 0.4s ease-in-out;
 }
 
 main .button:hover {
@@ -316,6 +320,9 @@ main .image-container img {
   display: flex;
   align-items: center;
   margin: 0 auto;
+}
+.active #about-us {
+  filter: blur(4px);
 }
 #about-us .image-container {
   width: 50%;
@@ -355,7 +362,9 @@ main .image-container img {
   padding: 0 6%;
   background-color: #fbfbfb;
 }
-
+.active #service-section {
+  filter: blur(4px);
+}
 #service-section .top {
   text-align: center;
 }
@@ -386,10 +395,6 @@ main .image-container img {
   margin-bottom: 40px;
   border: 3px solid transparent;
 }
-
-/* .services .item:last-child {
-  margin-right: 0;
-} */
 
 .services .item a {
   display: block;
@@ -431,6 +436,10 @@ main .image-container img {
 #download-container {
   padding: 4% 6% 10% 6%;
   background-color: #fbfbfb;
+}
+
+.active #download-container {
+  filter: blur(4px);
 }
 
 #download-container .image-box {
@@ -476,6 +485,7 @@ main .image-container img {
 
 #download-container .button li {
   margin-right: 30px;
+  transition: 0.4s ease-in-out;
 }
 
 #download-container .button li:last-child {
@@ -484,7 +494,7 @@ main .image-container img {
 
 #download-container .button li:hover {
   transform: scale(1.1);
-  transition: 0.4s ease-in-out;
+  
 }
 
 #download-container .image-container {
@@ -512,6 +522,11 @@ footer {
   background-size: cover;
   text-align: center;
   padding: 5% 2% 1% 2%;
+}
+
+
+.active footer {
+  filter: blur(4px);
 }
 
 .top-container {
@@ -594,9 +609,6 @@ footer {
   color: #00258d;
 }
 
-.copy span a:hover {
-  color: #888888;
-}
 
 /* responsive */
 
@@ -871,7 +883,7 @@ footer {
   }
   main .text-container {
     width: 100%;
-    padding: 20% 0 25% 0;
+    padding: 20% 0 15% 0;
   }
   main .content h1 {
     font-size: 32px;
@@ -889,7 +901,8 @@ footer {
     right: 5%;
   }
   main .image-container img {
-    width: 115%;
+    width: 130%;
+    right: -32%;
   }
   #about-us .image-container {
     width: 70%;
@@ -1032,8 +1045,8 @@ footer {
     width: 100%;
   }
   main .image-container img {
-    width: 106%;
-    right: -12%;
+    width: 119%;
+    right: -15%;
   }
   #about-us .image-container {
     width: 70%;
